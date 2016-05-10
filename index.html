@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<title>Build</title>
+	<meta name="keywords" content="build, create, make">
+	<meta name="description" content="A website about the definitions of building">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+	<link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	
+	<style>
+	
+	h1{font-family: 'Alegreya Sans', sans-serif; font-size: 115px; text-align:center; color:white; margin-top:-.25em; padding-bottom:.7em}
+	
+	.definitions, .notdefinitions{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:left; 
+	color:white;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:25em;
+	font-size:20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box; 
+	}
+	
+	.definitions{line-height:1.2em}
+	.notdefinitions{line-height:.5em}
+	
+	dd{margin-bottom:1em}
+	dt{margin-bottom:1em}
+
+	body{background-color:#0404B4; padding-top:17em}
+			
+	.image img{
+	width:40%; 
+	height:auto; 
+	margin-left:45%; 
+	-moz-transform: 
+	rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	transform-origin:right bottom;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-ms-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in
+	}
+
+	.image img:hover{
+	-moz-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg)}
+	
+	a:visited {color: white}
+	a:hover {color: white}
+	a:link {color: white}
+	
+	a{-webkit-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease} 
+
+	
+	@media (max-width: 699px){
+	.image img{width:60%; height: 80%; margin-left:30%; transition: none}
+	}
+	
+	</style>
+</head>
+
+<body>
+	
+	
+	<div class=image>
+	<img src="images/hammer2.png" alt=”firstpic”>
+	</div>	
+	
+	<div id=up>
+	<h1><a href="#down">B U I L D</a></h1>
+	</div>
+	
+	
+	<div id=down>
+	<div class=definitions>
+	<dl>
+	<dt><b>Pronounciation:</b></dt>
+	<dd><i>[bild]</i></dd>
+	<dt><b>Definition 1 - Verb (used with object):</b></dt>
+	
+	<dd>to construct by assembling and joining parts or materials
+	<br><i>Example: He built a green house.</i></dd>
+	
+	<dd>to establish, increase or strengthen
+	<br><i>Example: She built up his hopes of a new car.</i></dd>
+	
+	<dd>to mold, form, or create
+	<br><i>Example: This school will build boys into men.</i></dd>
+	
+	<dd>to base, found
+	<br><i>Example: A relationship built on trust.</i></dd>
+	
+	<dt><b>Definition 2 - Verb (used without object):</b></dt>
+	
+	<dd>to engage in the art, practice or business of building
+	<br><i>Example: He is a builder of home tools.</i></dd>
+	
+	<dd>to form or construct a plan, system of thought
+	<br><i>Example: He built on the philosophies of the past.</i></dd>
+	
+	<dd>to increase or develop toward a maximum, as of intensity, tempo, or magnitude
+	<br><i>Example: The drama builds steadily toward a climax.</i></dd>
+	
+	<dt><b>Definition 3 - Noun:</b></dt>
+	
+	<dd>the physical structure, especially of a person; physique; figure
+	<br><i>Example: He had a strong build.</i></dd>
+	
+	<dd>the manner or form of construction
+	<br><i>Example: The house was of modern build</i></dd>
+	
+	<dd>computer versions of programs, process of producing a software, new version or update
+	<br><i>Example: It was a frequent, incremental build of data</i></dd>
+	
+	<dd>masonry, a vertical joint or the vertical dimension of a stone laid on its bed
+	<br><i>Example: The build of the mason</i></dd>
+	</dl>
+	</div>
+	<div class=notdefinitions>
+	<p><b>Origins:</b></p>
+	<p>Before 1150, Middle English <i>bilden,</i> derivative of <i>bold</i></p>
+	<p><b>Origin of Root Words:</b></p>
+	<p>Proto-Germanic<p>
+	
+	<p><b>Synonoms:</b><p>
+		<p>assemble, erect, evolve, frame, physique, shape, model, begin</p>
+		
+	<p><b>Antonymns:</b></p>
+		<p>destroy,conclude, neglect, ruin, decelerate, overthrow, demolish</p>
+	
+	
+	<p><a href="http://dictionary.reference.com/browse/build" target="_blank">S O U R C E</a></p>
+
+	<p><a href="#up">Back to Top</a></p>
+	</div>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+	<script>
+	$(function() {
+		  $('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+			  var target = $(this.hash);
+			  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			  if (target.length) {
+				$('html,body').animate({
+				  scrollTop: target.offset().top 
+				}, 1000);
+				return false;
+			  }
+			}
+		  });
+		});
+	</script>
+	
+</body>
+
+</html>
